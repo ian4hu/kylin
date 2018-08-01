@@ -180,7 +180,7 @@
 
     <property>
         <name>hbase.rootdir</name>
-        <value>hdfs://sandbox.hortonworks.com:8020/apps/hbase/data</value>
+        <value>hdfs://qabb-qa-hdp-hbase0:8020/user/hbase</value>
     </property>
 
     <property>
@@ -230,7 +230,7 @@
 
     <property>
         <name>hbase.zookeeper.quorum</name>
-        <value>sandbox.hortonworks.com</value>
+        <value>qabb-qa-hdp-hbase0</value>
     </property>
 
     <property>
@@ -258,9 +258,24 @@
         <value>60000</value>
     </property>
 
-    <property>
+<!--    <property>
         <name>zookeeper.znode.parent</name>
         <value>/hbase-unsecure</value>
+    </property>-->
+
+    <property>
+        <name>hbase.wal.storage.policy</name>
+        <value>NONE</value>
+    </property>
+
+    <property>
+        <name>hbase.master</name>
+        <value>qabb-qa-hdp-hbase0:8010</value>
+    </property>
+
+    <property>
+        <name>hbase.group.enable</name>
+        <value>true</value>
     </property>
 
 </configuration>

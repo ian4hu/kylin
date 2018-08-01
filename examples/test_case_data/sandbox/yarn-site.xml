@@ -618,4 +618,19 @@
         <value>sandbox.hortonworks.com:8190</value>
     </property>
 
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobhistory.address</name>
+        <value>qabb-qa-hdp-hbase2:10020</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobhistory.webapp.address</name>
+        <value>qabb-qa-hdp-hbase2:19888</value>
+    </property>
+
 </configuration>

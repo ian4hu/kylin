@@ -57,3 +57,7 @@ then
         echo -e "\033[$1m$2\033[0m"
     }
 fi
+
+export HIVE_CONF=/Users/hujixu/Documents/hive/conf
+export HADOOP_USER_NAME=huser
+export PATH=/Users/hujixu/Documents/hive/bin://Users/hujixu/Documents/hadoop/bin:/Users/hujixu/Documents/hbase-1.2.6_180413:$PATH
