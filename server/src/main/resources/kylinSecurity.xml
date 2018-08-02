@@ -29,6 +29,7 @@
         <scr:expression-handler ref="expressionHandler"/>
     </scr:global-method-security>
 
+    <bean id="sessionFilter" class="org.apache.kylin.rest.security.session.SessionFilter" />
 
     <!-- acl config -->
     <bean id="aclPermissionFactory" class="org.apache.kylin.rest.security.AclPermissionFactory"/>
@@ -625,4 +626,5 @@
         <bean id="parserPoolHolder"
               class="org.springframework.security.saml.parser.ParserPoolHolder"/>
     </beans>
+
 </beans>
